@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
 <link rel="stylesheet" type="text/css" href="css/app.css">
+<link rel="stylesheet" type="text/css" href="css/image_grid.css">
+<link rel="stylesheet" type="text/css" href="css/slideshow.css">
 </head>
 
 <body>
@@ -45,8 +47,86 @@
     <a href="#" class="button large hollow">Learn Less</a>-->
     </div>
   </div>
-  <div class="column large-8 large-centered medium-11 medium-centered">
-    photos
+  <div class="column large-10 large-centered medium-11 medium-centered">
+<div>
+  <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="Photos/DSC_1362.JPG" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="Photos/CShell.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="Photos/IMAG0257.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="Photos/IMAG0260.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+</div>
+    <div class="row grid_row">
+  <div class="column grid_column image_grid">
+    <img src="Photos/IMAG0260.jpg">
+    <img src="Photos/IMAG0257.jpg">
+    <img src="Photos/Face.jpg">
+    <img src="Photos/DSC_1362.JPG">
+    <img src="Photos/IMAG0313.jpg">
+    <img src="Photos/1550096969250.jpg">
+    <img src="Photos/DSC_1362.JPG">
+  </div>
+  <div class="column grid_column image_grid">
+    <img src="Photos/website.jpg">
+    <img src="Photos/CShell.jpg">
+    <img src="Photos/IMAG0260.jpg">
+    <img src="Photos/CShell.jpg">
+    <img src="Photos/IMAG0257.jpg">
+    <img src="Photos/website.jpg">
+  </div>
+  <div class="column grid_column image_grid">
+    <img src="Photos/IMAG0260.jpg">
+    <img src="Photos/IMAG0257.jpg">
+    <img src="Photos/Face.jpg">
+    <img src="Photos/DSC_1362.JPG">
+    <img src="Photos/IMAG0313.jpg">
+    <img src="Photos/1550096969250.jpg">
+    <img src="Photos/DSC_1362.JPG">
+  </div>
+  <div class="column grid_column image_grid">
+    <img src="Photos/website.jpg">
+    <img src="Photos/CShell.jpg">
+    <img src="Photos/IMAG0260.jpg">
+    <img src="Photos/CShell.jpg">
+    <img src="Photos/IMAG0257.jpg">
+    <img src="Photos/website.jpg">
+  </div>
+</div>
   </div>
   <div class="column large-8 large-centered medium-11 medium-centered">
     <hr>
@@ -80,9 +160,7 @@
   </div>
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-  <script>
-    $(document).foundation();
-  </script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>
