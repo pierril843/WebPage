@@ -40,7 +40,7 @@
   <div class="callout large">
     <div class="row column text-center">
       <h1>Projects <i class="fas fa-box-open"></i></h1>
-      <p class="lead">Hello there, you have entered Robert R. Pierce's personal website. Used to showcase Riley's projects, interests, and portfolio</p>
+      <p class="lead">Below you can find many of my featured personal and school projects.</p>
       <!--<a href="#" class="button large">Learn More</a>
     <a href="#" class="button large hollow">Learn Less</a>-->
     </div>
@@ -56,34 +56,89 @@
       <div class="column">
         <!--<img class="thumbnail" src="https://placehold.it/550x550">-->
         <h4>Elevator Project</h4>
+        <p>2017 - 3rd Year Project</p>
         <div class="flex-video">
           <iframe src="https://www.youtube.com/embed/9pnAkFy2jzI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
+        <button onclick="Expand('Elevator')">Expand ...</button>
+        <div id="Elevator" style="display:none">
+          <p>The elevator project consisted of controlling a miniature elevator over a CAN network, interface the CAN network to a local network (apache on Supervisor node) and create a front end website that allows diagnostic controls. In total the network had 6 nodes; all nodes except the supervisor is  a HCS12-based board:</p>
+          <p>- 1-3 Floor Nodes - Each floor has a button for requesting the elevator via CAN, and LEDs would keep track of which floor the elevator is on by monitoring the messages sent by the EC.</p>
+          <p>- Car Node - Used as the inside portion of the elevator; handles the input of floor destination along with opening, closing the doors (simple state no control to actual doors) and displaying current floor with the same LED system as floor nodes.</p>
+          <p>- Elevator Node - this controller interfaces with the motors and position sensor. Listens for commands from the Supervisor and reports current car position to all nodes.</p>
+          <p>- Supervisor Node - Linux host communicating with PCAN; acts as the elevator state machine. It receives commands from the floor and car nodes along with the web interface. When moving to a new floor the supervisor would be the node responsible for telling the Elevator node to move. The supervisor alongside apache ran a MySQL instance to keep track of requests and the current state in the state machine. On the website, php was used to modify and make requests to the database. Javascript was used to give a live update of the car along with the recent request logs. </p>
+        </div>
+        <div>
+        <h5>Technology Reference Links</h5>
+        <li><a href="https://en.wikipedia.org/wiki/CAN_bus">CAN</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/LAMP_(software_bundle)">LAMP</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Freescale_68HC12">HCS12 Microcontroller</a></li>
+      </div>
       </div>
       <div class="column">
         <h4>HCS12 Controller Design</h4>
+        <p>2016 - 2nd Year Project</p>
         <img class="thumbnail" src="./Photos/IMAG0313.jpg">
-        <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
-      </div>
+        <button onclick="Expand('Controller')">Expand ...</button>
+        <div id="Controller" style="display:none">
+          <p>The elevator project consisted of controlling a miniature elevator over a CAN network, interface the CAN network to a local network (apache on Supervisor node) and create a front end website that allows diagnostic controls. In total the network had 6 nodes; all nodes except the supervisor is  a HCS12-based board:</p>
+          <p>- 1-3 Floor Nodes - Each floor has a button for requesting the elevator via CAN, and LEDs would keep track of which floor the elevator is on by monitoring the messages sent by the EC.</p>
+          <p>- Car Node - Used as the inside portion of the elevator; handles the input of floor destination along with opening, closing the doors (simple state no control to actual doors) and displaying current floor with the same LED system as floor nodes.</p>
+          <p>- Elevator Node - this controller interfaces with the motors and position sensor. Listens for commands from the Supervisor and reports current car position to all nodes.</p>
+          <p>- Supervisor Node - Linux host communicating with PCAN; acts as the elevator state machine. It receives commands from the floor and car nodes along with the web interface. When moving to a new floor the supervisor would be the node responsible for telling the Elevator node to move. The supervisor alongside apache ran a MySQL instance to keep track of requests and the current state in the state machine. On the website, php was used to modify and make requests to the database. Javascript was used to give a live update of the car along with the recent request logs. </p>
+        </div>
+        <div>
+        <h5>Technology Reference Links</h5>
+        <li><a href="https://en.wikipedia.org/wiki/CAN_bus">CAN</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/LAMP_(software_bundle)">LAMP</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Freescale_68HC12">HCS12 Microcontroller</a></li>
+        </div>      </div>
       <div class="column hide-for-small-only">
         <hr>
       </div>
       <div class="column hide-for-small-only">
         <hr>
+      </div>
+      <div class="column">
+        <h4>Personal Website</h4>
+        <p>2019 - Personal Project</p>
+        <img class="thumbnail" src="./Photos/website.jpg">
+        <button onclick="Expand('Website')">Expand ...</button>
+        <div id="Website" style="display:none">
+          <p>The elevator project consisted of controlling a miniature elevator over a CAN network, interface the CAN network to a local network (apache on Supervisor node) and create a front end website that allows diagnostic controls. In total the network had 6 nodes; all nodes except the supervisor is  a HCS12-based board:</p>
+          <p>- 1-3 Floor Nodes - Each floor has a button for requesting the elevator via CAN, and LEDs would keep track of which floor the elevator is on by monitoring the messages sent by the EC.</p>
+          <p>- Car Node - Used as the inside portion of the elevator; handles the input of floor destination along with opening, closing the doors (simple state no control to actual doors) and displaying current floor with the same LED system as floor nodes.</p>
+          <p>- Elevator Node - this controller interfaces with the motors and position sensor. Listens for commands from the Supervisor and reports current car position to all nodes.</p>
+          <p>- Supervisor Node - Linux host communicating with PCAN; acts as the elevator state machine. It receives commands from the floor and car nodes along with the web interface. When moving to a new floor the supervisor would be the node responsible for telling the Elevator node to move. The supervisor alongside apache ran a MySQL instance to keep track of requests and the current state in the state machine. On the website, php was used to modify and make requests to the database. Javascript was used to give a live update of the car along with the recent request logs. </p>
+        </div>
+        <div>
+        <h5>Technology Reference Links</h5>
+        <li><a href="https://en.wikipedia.org/wiki/CAN_bus">CAN</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/LAMP_(software_bundle)">LAMP</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Freescale_68HC12">HCS12 Microcontroller</a></li>
+        </div>
       </div>
       <div class="column">
         <!--<img class="thumbnail" src="https://placehold.it/550x550">-->
         <h4>Capstone Project</h4>
+        <p>2018 - 4th Year Project</p>
         <div class="flex-video">
           <iframe src="https://www.youtube.com/embed/bDEw0Yv07bc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
-      </div>
-      <div class="column">
-        <h4>Personal Website</h4>
-        <img class="thumbnail" src="./Photos/website.jpg">
-        <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
+        <button onclick="Expand('Capstone')">Expand ...</button>
+        <div id="Capstone" style="display:none">
+          <p>The elevator project consisted of controlling a miniature elevator over a CAN network, interface the CAN network to a local network (apache on Supervisor node) and create a front end website that allows diagnostic controls. In total the network had 6 nodes; all nodes except the supervisor is  a HCS12-based board:</p>
+          <p>- 1-3 Floor Nodes - Each floor has a button for requesting the elevator via CAN, and LEDs would keep track of which floor the elevator is on by monitoring the messages sent by the EC.</p>
+          <p>- Car Node - Used as the inside portion of the elevator; handles the input of floor destination along with opening, closing the doors (simple state no control to actual doors) and displaying current floor with the same LED system as floor nodes.</p>
+          <p>- Elevator Node - this controller interfaces with the motors and position sensor. Listens for commands from the Supervisor and reports current car position to all nodes.</p>
+          <p>- Supervisor Node - Linux host communicating with PCAN; acts as the elevator state machine. It receives commands from the floor and car nodes along with the web interface. When moving to a new floor the supervisor would be the node responsible for telling the Elevator node to move. The supervisor alongside apache ran a MySQL instance to keep track of requests and the current state in the state machine. On the website, php was used to modify and make requests to the database. Javascript was used to give a live update of the car along with the recent request logs. </p>
+        </div>
+        <div>
+        <h5>Technology Reference Links</h5>
+        <li><a href="https://en.wikipedia.org/wiki/CAN_bus">CAN</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/LAMP_(software_bundle)">LAMP</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Freescale_68HC12">HCS12 Microcontroller</a></li>
+        </div>
       </div>
       <div class="column hide-for-small-only">
         <hr>
@@ -93,16 +148,42 @@
       </div>
       <div class="column">
         <h4>Audio Amplifier Project</h4>
+        <p>2015 - 2nd Year Project</p>
         <div class="flex-video">
           <iframe src="https://www.youtube.com/embed/j3XXlnygaR4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
-      </div>
+        <button onclick="Expand('Amplifier')">Expand ...</button>
+        <div id="Amplifier" style="display:none">
+          <p>The elevator project consisted of controlling a miniature elevator over a CAN network, interface the CAN network to a local network (apache on Supervisor node) and create a front end website that allows diagnostic controls. In total the network had 6 nodes; all nodes except the supervisor is  a HCS12-based board:</p>
+          <p>- 1-3 Floor Nodes - Each floor has a button for requesting the elevator via CAN, and LEDs would keep track of which floor the elevator is on by monitoring the messages sent by the EC.</p>
+          <p>- Car Node - Used as the inside portion of the elevator; handles the input of floor destination along with opening, closing the doors (simple state no control to actual doors) and displaying current floor with the same LED system as floor nodes.</p>
+          <p>- Elevator Node - this controller interfaces with the motors and position sensor. Listens for commands from the Supervisor and reports current car position to all nodes.</p>
+          <p>- Supervisor Node - Linux host communicating with PCAN; acts as the elevator state machine. It receives commands from the floor and car nodes along with the web interface. When moving to a new floor the supervisor would be the node responsible for telling the Elevator node to move. The supervisor alongside apache ran a MySQL instance to keep track of requests and the current state in the state machine. On the website, php was used to modify and make requests to the database. Javascript was used to give a live update of the car along with the recent request logs. </p>
+        </div>
+        <div>
+        <h5>Technology Reference Links</h5>
+        <li><a href="https://en.wikipedia.org/wiki/CAN_bus">CAN</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/LAMP_(software_bundle)">LAMP</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Freescale_68HC12">HCS12 Microcontroller</a></li>
+        </div>      </div>
       <div class="column">
         <h4>Multimeter Project</h4>
+        <p>2014 - 1st Year Project</p>
         <img class="thumbnail" src="./Photos/1550096969250.jpg">
-        <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
-      </div>
+        <button onclick="Expand('Multimeter')">Expand ...</button>
+        <div id="Multimeter" style="display:none">
+          <p>The elevator project consisted of controlling a miniature elevator over a CAN network, interface the CAN network to a local network (apache on Supervisor node) and create a front end website that allows diagnostic controls. In total the network had 6 nodes; all nodes except the supervisor is  a HCS12-based board:</p>
+          <p>- 1-3 Floor Nodes - Each floor has a button for requesting the elevator via CAN, and LEDs would keep track of which floor the elevator is on by monitoring the messages sent by the EC.</p>
+          <p>- Car Node - Used as the inside portion of the elevator; handles the input of floor destination along with opening, closing the doors (simple state no control to actual doors) and displaying current floor with the same LED system as floor nodes.</p>
+          <p>- Elevator Node - this controller interfaces with the motors and position sensor. Listens for commands from the Supervisor and reports current car position to all nodes.</p>
+          <p>- Supervisor Node - Linux host communicating with PCAN; acts as the elevator state machine. It receives commands from the floor and car nodes along with the web interface. When moving to a new floor the supervisor would be the node responsible for telling the Elevator node to move. The supervisor alongside apache ran a MySQL instance to keep track of requests and the current state in the state machine. On the website, php was used to modify and make requests to the database. Javascript was used to give a live update of the car along with the recent request logs. </p>
+        </div>
+        <div>
+        <h5>Technology Reference Links</h5>
+        <li><a href="https://en.wikipedia.org/wiki/CAN_bus">CAN</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/LAMP_(software_bundle)">LAMP</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Freescale_68HC12">HCS12 Microcontroller</a></li>
+        </div>      </div>
     </div>
   </div>
   <div class="column large-8 large-centered medium-11 medium-centered">
@@ -137,9 +218,7 @@
   </div>
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-  <script>
-    $(document).foundation();
-  </script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>

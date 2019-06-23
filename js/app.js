@@ -2,6 +2,16 @@ $(document).foundation()
 var slideIndex = 1;
 showSlides(slideIndex);
 
+//
+function Expand(s) {
+  var x = document.getElementById(s);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
