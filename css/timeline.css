@@ -112,20 +112,24 @@
     padding: 0;
     width: 90%;
   }
+
   .timeline::before {
     left: 0;
   }
+
   .timeline .timeline-item .timeline-content {
     float: right;
     text-align: left;
     width: 90%;
   }
+
   .timeline .timeline-item .timeline-content::before, .timeline .timeline-item .timeline-content.right::before {
     border-left: 0;
     border-right: 7px solid #fefefe;
     left: 10%;
     margin-left: -6px;
   }
+
   .timeline .timeline-item .timeline-icon {
     left: 0;
   }

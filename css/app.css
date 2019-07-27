@@ -5,10 +5,11 @@
 
 .test1 a {
   border-radius: 7px;
-  -webkit-transition-duration: 0.2s; /* Safari */
+  -webkit-transition-duration: 0.2s;
+  /* Safari */
 }
 
-.showmore button{
+.showmore button {
   background-color: white;
   border: 2px solid dodgerblue;
   color: dodgerblue;
@@ -19,7 +20,8 @@
   font-size: 16px;
   border-radius: 4px;
   margin: 4px 2px;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
   font-family: Audiowide;
