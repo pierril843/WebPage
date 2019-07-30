@@ -11,22 +11,21 @@
   <link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
 
-<body>
-
+<header>
   <div class="top-bar">
     <div class="top-bar-left hide-for-small-only hide-for-medium-only">
       <ul class="menu">
-        <li class="menu-text "><a style="color:inherit; text-decoration:inherit;padding:10px; font-family: Audiowide;font-size: 20px; border-radius: 7px;background-color: dodgerblue" href="index.html">[Riley's Site]</a></li>
+        <li class="menu-text "><a href="index.html">[Riley's Site]</a></li>
       </ul>
     </div>
     <div class="title-bar" data-responsive-toggle="main-nav" data-hide-for="medium">
-      <div class="title-bar-title"><a style="color:inherit; text-decoration:inherit;padding: 0px;font-family: Audiowide;" href="index.html">[Riley's Site]</a></div>
+      <div class="title-bar-title"><a href="index.html">[Riley's Site]</a></div>
       <div style="float: right;"><button class="menu-icon" type="button" data-toggle="main-nav"></button></div>
 
     </div>
     <div class="top-bar-right" id=main-nav>
-      <ul class="menu vertical medium-horizontal test1" style="text-align: center; font-family: Audiowide; padding:10px 0px 10px 0px; ">
-        <li class="show-for-medium-only" style="padding: 10px 50px"><a href="index.html">Home <i class="fas fa-home"></i></a></li>
+      <ul class="menu vertical medium-horizontal test1">
+        <li class="show-for-medium-only" id="small-logo"><a href="index.html">Home <i class="fas fa-home"></i></a></li>
         <li class=""><a href="Projects.html">Projects <i class="fas fa-box-open"></i></a></li>
         <li><a href="Resume.html">Resume <i class="fas fa-user-tie"></i></a></li>
         <li><a href="Photos.html">Photos <i class="fas fa-camera-retro"></i></a></li>
@@ -36,7 +35,9 @@
       </ul>
     </div>
   </div>
+</header>
 
+<body>
   <div class="callout large">
     <div class="row column text-center">
       <h1>Travel <i class="far fa-paper-plane"></i></h1>
@@ -94,10 +95,13 @@
       </div>
     </div>
   </div>
+</body>
+
+<footer>
   <div class="column large-8 large-centered medium-11 medium-centered">
     <hr>
-    <div class="row small-up-3" style="padding-bottom: 5px;">
-      <div class="column" style="text-align: center">
+    <div class="row small-up-3 bottom-links">
+      <div class="column">
         <a href="https://github.com/pierril843">
           <span class="fa-stack fa-lg">
             <i class="fa fa-square fa-stack-2x"></i>
@@ -105,7 +109,7 @@
           </span>
         </a>
       </div>
-      <div class="column" style="text-align: center">
+      <div class="column">
         <a href="https://www.instagram.com/r_riley_pierce/">
           <span class="fa-stack fa-lg">
             <i class="fa fa-square fa-stack-2x"></i>
@@ -113,7 +117,7 @@
           </span>
         </a>
       </div>
-      <div class="column" style="text-align: center">
+      <div class="column">
         <a href="https://www.linkedin.com/in/robertrileypierce">
           <span class="fa-stack fa-lg">
             <i class="fa fa-square fa-stack-2x"></i>
@@ -122,13 +126,14 @@
         </a>
       </div>
     </div>
-
   </div>
+</footer>
+
+<foot>
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
   <script>
     $(document).foundation();
   </script>
-</body>
-
+</foot>
 </html>

@@ -1,3 +1,7 @@
+#small-logo {
+  padding: 10px 50px;
+}
+
 .test1 a:hover {
   color: black;
   background-color: dodgerblue;
@@ -7,6 +11,12 @@
   border-radius: 7px;
   -webkit-transition-duration: 0.2s;
   /* Safari */
+}
+
+.test1 li {
+  text-align: center;
+  font-family: Audiowide;
+  padding: 10px 0px 10px 0px;
 }
 
 .showmore button {
@@ -30,4 +40,30 @@
 .showmore button:hover {
   background-color: dodgerblue;
   color: white;
+}
+
+/* Logo for large and up */
+.menu-text a {
+  color: inherit;
+  text-decoration: inherit;
+  padding: 10px;
+  font-family: Audiowide;
+  font-size: 20px;
+  border-radius: 7px;
+  background-color: dodgerblue;
+}
+
+/* medium logo is in list */
+
+/*small logo*/
+.title-bar-title a {
+  color: inherit;
+  text-decoration: inherit;
+  padding: 0px;
+  font-family: Audiowide;
+}
+
+.bottom-links div {
+  padding-bottom: 5px;
+  text-align: center;
 }
