@@ -1,0 +1,41 @@
+table.skills-med-large {
+  width: 100%;
+}
+
+.skills-med-large tbody tr td {
+  width: 33%;
+}
+
+table.skills-small {
+  width: 100%;
+}
+
+.skills-small tbody tr td {
+  width: 50%;
+}
+
+.skills-small tbody tr td div div {
+  text-align: center;
+}
+
+div.skill-icon {
+  padding: 5px;
+}
+
+.skill-icon i {
+  font-size: 28px;
+}
+
+div.skill-text {
+  font-size: 16px;
+  padding: 0px;
+  height: 48px;
+}
+
+.point div div p {
+  margin: 0px;
+}
+
+i.fa-angle-double-right {
+  font-size: 35px;
+}
