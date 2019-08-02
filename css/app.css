@@ -4,12 +4,13 @@
 
 .test1 a:hover {
   color: black;
-  background-color: dodgerblue;
+  background-color: #5f1f9c;
 }
 
 .test1 a {
   border-radius: 7px;
   -webkit-transition-duration: 0.2s;
+  color: #ffffff;
   /* Safari */
 }
 
@@ -50,17 +51,19 @@
   font-family: Audiowide;
   font-size: 20px;
   border-radius: 7px;
-  background-color: dodgerblue;
+  background-color: #9f18cf;
 }
 
 /* medium logo is in list */
 
 /*small logo*/
 .title-bar-title a {
-  color: inherit;
+  color: #8f12c7;
   text-decoration: inherit;
-  padding: 0px;
+  padding: 7px;
   font-family: Audiowide;
+  border-radius: 7px;
+  background-color: #000000;
 }
 
 .bottom-links div {
@@ -74,4 +77,41 @@
 
 .sub-section div h3 a {
   color: inherit;
+}
+
+ul.test1 {
+  background: #607d8b;
+}
+
+h2,h3.bold-text {
+  color: #303e45;
+}
+
+i.fa-square {
+  color: #607d8b;
+}
+
+/* main acent */
+.palette-1 {
+  background: #ff5722;
+}
+
+/*  */
+.palette-2 {
+  background: #e1e1e1;
+}
+
+/* bold text */
+.palette-3 {
+  background: #607d8b;
+}
+
+/* text */
+.palette-4 {
+  background: #000000;
+}
+
+/* background */
+.palette-5 {
+  background: #f5f5f5;
 }
