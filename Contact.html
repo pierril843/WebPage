@@ -51,7 +51,7 @@
       <div class="column left-content medium-6 hide-for-small-only">
         <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=ottawa&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="25" scrolling="no" marginheight="0"></iframe>
       </div>
-      <div class="column right-content medium-6" style="">
+      <div class="column right-content medium-6">
         <div class="row text-content">
           <i class="fas fa-map-marker-alt fa-4x"></i>
         </div>
@@ -64,16 +64,17 @@
           <iframe width="100%" height="300px" id="gmap_canvas" src="https://maps.google.com/maps?q=ottawa&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="25" scrolling="no" marginheight="0"></iframe>
         </div>
 
-        <div class="hide-for-small-only">
-          <hr />
-        </div>
-
-        <div class="row text-content">
-          <i class="fas fa-at fa-4x"></i>
-        </div>
-
-        <div class="row text-content">
-          <p>pierril843@gmail.com</p>
+        <div class="row">
+          <form method="post" action="php/email.php">
+            <fieldset class="fieldset" style="text-align:left;">
+              <legend style="font-family: Audiowide;">Contact Me:</legend>
+              <input type="text" value="" placeholder="Enter Email" name="email">
+              <input type="text" value="" placeholder="Enter Name" name="name">
+              <p style="font-family: Audiowide;">Message Below</p>
+              <textarea rows="4" placeholder="..." name="message"></textarea>
+              <input name="submit" style="font-family: Audiowide; border-radius: 5px;" type="submit" class="button" value="Submit">
+            </fieldset>
+          </form>
         </div>
       </div>
     </div>
