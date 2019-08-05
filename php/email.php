@@ -9,6 +9,10 @@ if($_POST["submit"]) {
 
     $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
 
-    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+    if (mail($recipient, $subject, $mailBody)) {
+      echo ("Message successfully sent!");
+    } else {
+      echo ("Message delivery failed...");
+    }
 }
 ?>
